@@ -4,6 +4,18 @@
 # @author: Raj KB <magepsycho@gmail.com>
 ################################################################################
 
+# Create and start containers
+wardenEnvUp() {
+	warden env up
+}
+alias wup="wardenEnvUp"
+
+# Stop services
+wardenEnvStop() {
+	warden env stop
+}
+alias wst="wardenEnvStop"
+
 # Connects to `php-debug` container shell
 wardenDebug() {
 	warden debug
