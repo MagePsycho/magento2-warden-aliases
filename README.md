@@ -32,5 +32,7 @@ With aliases, you don't need to write full `warden` command.
 | Shell (`php-fpm`) | `warden shell`  | `wsh` |
 | Shell (`php-debug`) | `warden debug`  | `wdg` |
 | Environment | `warden env <action>`  | `wenv <action>` |
+| Environment | `warden env up`  | `wup` |
+| Environment | `warden env stop`  | `wst` |
 
 
