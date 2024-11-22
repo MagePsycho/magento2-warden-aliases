@@ -81,4 +81,14 @@ wardenEnv() {
 }
 alias wenv="wardenEnv"
 
+wardenInit() {
+  local project=$1
+  local environment_type=${2:-magento2}
+  warden env-init "$project" "$environment_type"
+  warden sign-certificate "$project".test
+}
+alias winit="wardenInit"
+alias wi="wardenInit"
+
+
 ################################################################################
