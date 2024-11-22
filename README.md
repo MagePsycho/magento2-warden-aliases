@@ -22,20 +22,19 @@ source ~/.bash_profile
 ## Aliases
 With aliases, you don't need to write full `warden` command.
 
-| Category            | Warden Command                                        | Alias Command   |
-|---------------------|-------------------------------------------------------|-----------------|
-| Magento 2           | `warden shell -c "bin/magento <action>"`              | `wm2 <action>`  |
-| MageRun             | `warden shell -c "n98-magerun <action>"`              | `wmr <action>`  |
-| Redis               | `warden redis <action>`                               | `wrd <action>`  |
-| Database            | `warden db <action>`                                  | `wdb <action>`  |
-| Logs                | `warden env logs --tail 0 -f nginx php-fpm php-debug` | `wlg`           |
-| Shell (`php-fpm`)   | `warden shell`                                        | `wsh`           |
-| Shell (`php-debug`) | `warden debug`                                        | `wdg`           |
-| Global Services     | `warden svc <action>`                                 | `wsvc <action>` |
-| Global Services     | `warden svc up`                                       | `wsup`          |
-| Global Services     | `warden svc stop`                                     | `wsst`          |
-| Environment         | `warden env <action>`                                 | `wenv <action>` |
-| Environment         | `warden env up`                                       | `wup`           |
-| Environment         | `warden env stop`                                     | `wst`           |
-
-
+| Category            | Warden Command                                        | Alias Command                       |
+|---------------------|-------------------------------------------------------|-------------------------------------|
+| Magento 2           | `warden shell -c "bin/magento <action>"`              | `wm2 <action>`                      |
+| MageRun             | `warden shell -c "n98-magerun <action>"`              | `wmr <action>`                      |
+| Redis               | `warden redis <action>`                               | `wrd <action>`                      |
+| Database            | `warden db <action>`                                  | `wdb <action>`                      |
+| Logs                | `warden env logs --tail 0 -f nginx php-fpm php-debug` | `wlg`                               |
+| Shell (`php-fpm`)   | `warden shell`                                        | `wsh`                               |
+| Shell (`php-debug`) | `warden debug`                                        | `wdg`                               |
+| Global Services     | `warden svc <action>`                                 | `wsvc <action>`                     |
+| Global Services     | `warden svc up`                                       | `wsup`                              |
+| Global Services     | `warden svc stop`                                     | `wsst`                              |
+| Environment         | `warden env <action>`                                 | `wenv <action>`                     |
+| Environment         | `warden env up`                                       | `wup`                               |
+| Environment         | `warden env stop`                                     | `wst`                               |
+| Environment Init    | `warden env-init <project> <environment_type> && warden sign-certificate <project>.test`  | `winit <project> <environment_type>`|
