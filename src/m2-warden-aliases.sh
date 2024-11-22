@@ -3,6 +3,17 @@
 # @website: https://www.magepsycho.com
 # @author: Raj KB <magepsycho@gmail.com>
 ################################################################################
+# Create and start services
+wardenSvcUp() {
+	warden svc up
+}
+alias wsup="wardenSvcUp"
+
+# Stop svc services
+wardenSvcStop() {
+	warden svc stop
+}
+alias wsst="wardenSvcStop"
 
 # Create and start containers
 wardenEnvUp() {
@@ -57,6 +68,12 @@ wardenLogs() {
 	warden env logs --tail 0 -f nginx php-fpm php-debug
 }
 alias wlg="wardenLogs"
+
+# Executes svc related commands
+wardenSvc() {
+	warden svc $1
+}
+alias wsvc="wardenSvc"
 
 # Executes environment related commands
 wardenEnv() {
